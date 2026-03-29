@@ -33,7 +33,7 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 
 # ─────────────────────────────────────────────────────────────────────────────
-# CONFIGURACIÓN — editá aquí para agregar/quitar bancos o indicadores
+# CONFIGURACIÓN 
 # ─────────────────────────────────────────────────────────────────────────────
 
 BANCOS: dict[str, str] = {
