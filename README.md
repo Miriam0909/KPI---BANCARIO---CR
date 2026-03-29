@@ -72,12 +72,7 @@ Una fila por banco y período. Una columna por KPI.
 | `captaciones_plazo` | % del fondeo proveniente de depósitos a plazo del público | % | Contextual |
 | `spread_intermediacion` | Activo productivo de intermediación / pasivo con costo | veces | Mayor = mejor |
 
-**Cómo conectarlo en Power BI:**
-Inicio → Obtener datos → Texto/CSV → seleccioná `kpi_pivot.csv`.
-La columna `fecha` ya viene lista — Power BI la detecta como fecha automáticamente.
-
 ---
-
 ### `kpi_largo.csv` — para análisis en Python o SQL
 
 El mismo dato en formato long: una fila por combinación de banco + período +
