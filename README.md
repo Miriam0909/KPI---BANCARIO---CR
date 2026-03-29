@@ -1,7 +1,8 @@
-# KPI---BANCARIO---CR
+# KPIs BANCARIOS CR
 Pipeline de limpieza y visualización de KPIs del sistema bancario costarricense usando datos públicos de la SUGEF
 Datos Proyecto KPIs Financieros/
 Proyecto de portafolio 
+---
 Fuente de datos: Superintendencia General de Entidades Financieras (SUGEF)
 ---
 
@@ -104,22 +105,7 @@ Mismo contenido que `kpi_pivot.csv` pero en Excel con dos hojas:
 Útil para compartir con personas que no usan Power BI, o para adjuntar en el
 portafolio.
 
----
 
-## Cómo actualizar los datos
-
-1. Entrá a `sugef.fi.cr → Servicios → Reportes → Indicadores Financieros`
-2. Seleccioná **Sistema Financiero Nacional → Generar → Excel**
-3. Guardá el archivo en esta carpeta (el nombre debe empezar con `reporte`)
-4. Corré el script de nuevo:
-
-```bash
-python sugef_to_powerbi.py
-```
-
-Los archivos en `output_powerbi/` se sobreescriben con los datos nuevos.
-
----
 
 ## Cobertura de datos
 
