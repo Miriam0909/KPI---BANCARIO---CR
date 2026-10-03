@@ -11,8 +11,7 @@ Los equipos de análisis en banca necesitan monitorear mensualmente los indicado
 de salud financiera del sistema para detectar tendencias de riesgo, comparar el
 desempeño propio contra el mercado y preparar reportes ejecutivos.
 
-El reporte oficial de la SUGEF se publica como un archivo Excel con formato visual
-— títulos, celdas fusionadas, filas vacías — que no se puede conectar directamente
+El reporte oficial de la SUGEF se publica como un archivo Excel con formato visual: títulos, celdas fusionadas, filas vacías. No se puede conectar directamente
 a Power BI. Este proyecto automatiza la transformación de ese archivo en datos
 listos para análisis.
 
@@ -25,8 +24,7 @@ El script recibe el reporte `.xls` descargado de la SUGEF y ejecuta tres etapas:
 ### 1. Lectura
 
 Abre el archivo y navega su estructura no tabular. El reporte de SUGEF pone el
-nombre del banco una sola vez y luego lista sus indicadores en filas consecutivas
-— el script mantiene eso como estado mientras recorre las filas, descartando
+nombre del banco una sola vez y luego lista sus indicadores en filas consecutivas, el script mantiene eso como estado mientras recorre las filas, descartando
 automáticamente entidades que no son bancos comerciales (cooperativas, casas de
 cambio, financieras).
 
@@ -61,7 +59,7 @@ Una fila por banco y período. Una columna por KPI.
 |---|---|---|---|
 | `banco` | Nombre corto del banco | — | — |
 | `periodo` | Período original (MM/YYYY) | — | Solo referencia |
-| `fecha` | Fecha primer día del mes | YYYY-MM-DD | Usá esta para el eje de tiempo |
+| `fecha` | Fecha primer día del mes | YYYY-MM-DD | Eje de tiempo |
 | `mora_90d` | Cartera con más de 90 días de atraso o en cobro judicial | % | Menor = mejor |
 | `cartera_ab` | Cartera clasificada en categorías A y B (bajo riesgo SUGEF) | % | Mayor = mejor |
 | `cobertura_provisiones` | Veces que las estimaciones cubren la cartera morosa >90d | veces | >1x = bien cubierto |
@@ -126,7 +124,7 @@ Datos Proyecto KPIs Financieros/
 │
 ├── sugef_to_powerbi.py          ← script principal
 ├── reporte-20260328-121936.xls  ← archivo descargado de SUGEF
-├── README.md                    ← este archivo
+├── README.md                   
 │
 └── output_powerbi/
     ├── kpi_pivot.csv            ← conectar a Power BI
